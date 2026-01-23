@@ -21,11 +21,11 @@ export default function Details() {
 
   const params: pokemonLimitedInfoType = useLocalSearchParams();
 
-  const { width } = useWindowDimensions();
+  const { height, width } = useWindowDimensions();
 
   const widthOfPokedexEntry = Math.min(width, 600);
 
-  const imageDims = widthOfPokedexEntry * 0.2;
+  const imageDims = Math.min(widthOfPokedexEntry * 0.2, height * 0.2);
 
   const urlArray = params.url.split("/");
   const pokemonNumber = urlArray[urlArray.length - 2];
@@ -96,7 +96,7 @@ export default function Details() {
     return null;
   }
 
-  const customStyle = generateCustomStyle(pokemonInfo, widthOfPokedexEntry);
+  const customStyle = generateCustomStyle(pokemonInfo, widthOfPokedexEntry, imageDims);
 
   return (
     <>

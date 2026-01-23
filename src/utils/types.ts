@@ -27,4 +27,6 @@ export type pokemonVeryDetailedInfoType = {
 
 export type pokemonCardPropType = {
   pokemon: pokemonLimitedInfoType;
+  cardHeight: number | null;
+  cardWidth: number | null;
 };

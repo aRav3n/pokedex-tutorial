@@ -9,9 +9,19 @@ import {
 } from "../utils/types";
 import { generateCustomStyle, styles } from "../utils/styles";
 
-export default function PokemonCard({ pokemon }: pokemonCardPropType) {
+export default function PokemonCard({
+  pokemon,
+  cardHeight,
+  cardWidth,
+}: pokemonCardPropType) {
+  const blankPokemonDetailObject = {
+    name: "",
+    url: "",
+    image: "",
+    types: [{ slot: 0, type: { name: "", url: "" } }],
+  };
   const [detailedPokemonInfo, setDetailedPokemonInfo] =
-    useState<pokemonDetailedInfoType | null>(null);
+    useState<pokemonDetailedInfoType>(blankPokemonDetailObject);
 
   async function fetchDetails(pokemonToFetch: pokemonLimitedInfoType) {
     try {
@@ -33,7 +43,11 @@ export default function PokemonCard({ pokemon }: pokemonCardPropType) {
   }, []);
 
   if (detailedPokemonInfo) {
-    const customStyle = generateCustomStyle(detailedPokemonInfo, null);
+    const customStyle = generateCustomStyle(
+      detailedPokemonInfo,
+      cardHeight,
+      cardWidth
+    );
 
     return (
       <Link
@@ -55,7 +69,7 @@ export default function PokemonCard({ pokemon }: pokemonCardPropType) {
           {detailedPokemonInfo.image && (
             <Image
               source={{ uri: detailedPokemonInfo.image }}
-              style={{ width: 100, height: 100 }}
+              style={customStyle.mainCardImage}
             />
           )}
         </View>

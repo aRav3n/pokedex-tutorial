@@ -13,6 +13,9 @@ export const styles = StyleSheet.create({
   closeText: {
     flexDirection: "row",
   },
+  headerTitle: {
+    alignSelf: "center",
+  },
   mainFlexContainerContentStyle: {
     alignContent: "center",
     alignItems: "center",
@@ -20,7 +23,8 @@ export const styles = StyleSheet.create({
     padding: 16,
   },
   nameText: {
-    fontSize: 20,
+    flexGrow: 1,
+    fontSize: 16,
     fontWeight: "bold",
     textAlign: "center",
   },
@@ -37,14 +41,16 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   typeText: {
-    fontSize: 18,
+    flexGrow: 1,
+    fontSize: 14,
     textAlign: "center",
   },
 });
 
 export function generateCustomStyle(
   pokemonInfo: pokemonDetailedInfoType | pokemonVeryDetailedInfoType,
-  width: number | null
+  cardHeight: number | null,
+  cardWidth: number | null
 ) {
   // credit: perplexity.ai
   const colorsByType = {
@@ -73,11 +79,26 @@ export function generateCustomStyle(
       colorsByType[pokemonInfo.types[0].type.name]
     : "pink";
 
+  const imageDims =
+    cardHeight && cardWidth ? Math.min(cardHeight, cardWidth) * 0.5 : 100;
+
   const customStyle = StyleSheet.create({
     mainCard: {
+      alignContent: "stretch",
+      alignItems: "center",
       backgroundColor: bgColor,
+      borderColor: "#00000044",
       borderRadius: 20,
+      borderWidth: 2,
+      height: cardHeight,
       padding: 20,
+      width: cardWidth,
+    },
+    mainCardImage: {
+      flexGrow: 3,
+      flexShrink: 1,
+      height: imageDims,
+      width: imageDims,
     },
     pokedexTopParent: {
       backgroundColor: bgColor,
