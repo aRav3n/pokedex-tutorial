@@ -1,11 +1,14 @@
-import { Stack } from "expo-router";
+import { SplashScreen, Stack } from "expo-router";
 
-import { styles } from "../utils/styles";
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   return (
     <Stack>
-      <Stack.Screen name="index" options={{ headerTitleAlign: "center", title: "Pokédex" }} />
+      <Stack.Screen
+        name="index"
+        options={{ headerTitleAlign: "center", title: "Pokédex" }}
+      />
       <Stack.Screen
         name="details"
         options={{
