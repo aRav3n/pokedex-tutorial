@@ -15,16 +15,18 @@
 
 ## Description
 
-Write a paragraph or two describing the project here.
+This is a simple Pokédex of the original 151 Pokémon.
 
 ### Features
 
-- Feature one
-- Feature two
+- Display a list of all 151 original Pokémon
+- View Pokédex entries for each Pokémon by clicking on them
+- Pulls Pokémon information from [PokéAPI](https://pokeapi.co)
 
 ## Where to Download the App
 
-[Try it out online](https://grounded-wanderer-pokedex.expo.app)
+<a href="https://grounded-wanderer-pokedex.expo.app"><img src="https://img.shields.io/badge/Try%20it%20Online-000000?style=for-the-badge&logo=globe&logoColor=white" style="height: 48px; width: auto;"/></a>
+
 
 <!-- ******** Add link ************
 <a href="https://play.google.com/store/games"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="height: 48px; width: auto;"/></a>
@@ -34,22 +36,30 @@ Write a paragraph or two describing the project here.
 <a href="https://f-droid.org/packages/"><img src="" style="height: 48px; width: auto;"/></a>
 -->
 
-<!-- ******** Add link ************
-<a href="APP_CONFIGURATION_HTML_LINK"><img src="https://raw.githubusercontent.com/ImranR98/Obtainium/refs/heads/main/assets/graphics/badge_obtainium.png" style="height: 48px; width: auto;"/></a>
--->
-
 ## Usage and Screenshots
 
+### Screenshots of the Web App
+
 <div>
-<img src="./public/screenshot.png" alt="screenshot" style="height: 50vh; width: auto;">
-<img src="./public/screenshot.png" alt="screenshot" style="height: 50vh; width: auto;">
+<img src="./assets/images/screenshot-web.png" alt="screenshot of main page on web app" style="max-height: 50vh; max-width: 50vw;">
+<img src="./assets/images/screenshot-web-charmander.png" alt="screenshot of Charmander's details" style="max-height: 50vh; max-width: 50vw;">
 </div>
 
-Here's a brief description of how to use the app.
+### Screenshots of the Android App
+
+<div>
+<img src="./assets/images/screenshot-android.jpg" alt="screenshot of main page on Android app" style="max-height: 50vh; max-width: 50vw;">
+<img src="./assets/images/screenshot-android-pikachu-small-popup.jpg" alt="screenshot of small window of Pikachu's details on Android" style="max-height: 50vh; max-width: 50vw;">
+<img src="./assets/images/screenshot-android-pikachu-large-popup.jpg" alt="screenshot of large window of Pikachu's details on Android" style="max-height: 50vh; max-width: 50vw;">
+</div>
+
+You can view the Pokédex entry for each Pokémon by clicking on them.
 
 ## Future Improvements
 
-- Improvement idea
+- Improve general styling
+- Add search function
+  - Search by name or by number
 
 ## Installation Instructions
 
