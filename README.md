@@ -1,4 +1,4 @@
-# App Name
+# Pokédex
 
 ## Table of Contents
 
@@ -26,7 +26,6 @@ This is a simple Pokédex of the original 151 Pokémon.
 ## Where to Download the App
 
 <a href="https://grounded-wanderer-pokedex.expo.app"><img src="https://img.shields.io/badge/Try%20it%20Online-000000?style=for-the-badge&logo=globe&logoColor=white" style="height: 48px; width: auto;"/></a>
-
 
 <!-- ******** Add link ************
 <a href="https://play.google.com/store/games"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="height: 48px; width: auto;"/></a>
@@ -73,24 +72,24 @@ You can view the Pokédex entry for each Pokémon by clicking on them.
 1. `git clone COPIED_URL`
 1. `cd PROJECT_FOLDER`
 1. Run the following in your terminal
-   - ```bash
-     npm init -y
-     npm install
-     ```
-   - ```bash
-     eas login
-     ```
+   ```bash
+   npm init -y
+   npm install
+   ```
+   ```bash
+   eas login
+   ```
 1. ```bash react native
    npx expo start
    ```
 
    - If there are [issues](https://docs.expo.dev/get-started/start-developing/#having-problems) run this instead
-     - ```bash
-       npx expo start --tunnel
-       ```
+     ```bash
+     npx expo start --tunnel
+     ```
    - `^` + `c` will end the process
 
-**Note: to build a production apk:**
+### To build a production apk
 
 1. ```bash
    code eas.json
@@ -108,9 +107,9 @@ You can view the Pokédex entry for each Pokémon by clicking on them.
    }
    ```
 1. Then you can run the apk build profile
-   - ```
-     eas build --platform android --profile apk
-     ```
+   ```
+   eas build --platform android --profile apk
+   ```
 
 ## Technologies Used
 
@@ -118,10 +117,7 @@ You can view the Pokédex entry for each Pokémon by clicking on them.
 - <a href="https://eslint.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg" style="height: 2rem; width: auto;"> ESLint</a>
 - <a href="https://expo.dev"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" style="height: 2rem; width: auto; vertical-align: middle;"> Expo </a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" style="height: 2rem; width: auto;"> JavaScript</a>
-- <a href="https://www.postgresql.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" style="height: 2rem; width: auto;"/> PostgreSQL</a>
-- <a href="https://www.prisma.io/"><img src="https://skillicons.dev/icons?i=prisma" style="height: 2rem; width: auto;"/> Prisma ORM</a>
 - <a href="https://reactnative.dev/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" style="height: 2rem; width: auto;"> React Native</a>
-- <a href="https://sqlite.org//"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" style="height: 2rem; width: auto;"/>SQLite</a>
 - <a href="https://www.typescriptlang.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" style="height: 2rem; width: auto;"/> TypeScript</a>
 
 ### Development Tools
@@ -134,61 +130,84 @@ You can view the Pokédex entry for each Pokémon by clicking on them.
 
 - <a href="https://expo.dev/services/hosting"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" style="height: 24px; width: auto;"/> EAS</a>
 - <a href="https://github.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" style="height: 24px; width: auto;"/> Github</a>
-- <a href="https://neon.com/"><img src="https://neon.com/brand/neon-logomark-light-color.svg" style="height: 24px; width: auto;"/> Neon</a>
 
 ## Dependencies and Credits
 
 ### Package Dependencies
 
-- [packageName](https://www.npmjs.com/package/packageName)
+- [@expo/vector-icons](https://www.npmjs.com/package/@expo/vector-icons)
+- [@react-navigation/bottom-tabs](https://www.npmjs.com/package/@react-navigation/bottom-tabs)
+- [@react-navigation/elements](https://www.npmjs.com/package/@react-navigation/elements)
+- [@react-navigation/native](https://www.npmjs.com/package/@react-navigation/native)
+- [expo](https://www.npmjs.com/package/expo)
+- [expo-constants](https://www.npmjs.com/package/expo-constants)
+- [expo-dev-client](https://www.npmjs.com/package/expo-dev-client)
+- [expo-font](https://www.npmjs.com/package/expo-font)
+- [expo-haptics](https://www.npmjs.com/package/expo-haptics)
+- [expo-image](https://www.npmjs.com/package/expo-image)
+- [expo-linking](https://www.npmjs.com/package/expo-linking)
+- [expo-router](https://www.npmjs.com/package/expo-router)
+- [expo-splash-screen](https://www.npmjs.com/package/expo-splash-screen)
+- [expo-status-bar](https://www.npmjs.com/package/expo-status-bar)
+- [expo-symbols](https://www.npmjs.com/package/expo-symbols)
+- [expo-system-ui](https://www.npmjs.com/package/expo-system-ui)
+- [expo-web-browser](https://www.npmjs.com/package/expo-web-browser)
+- [react](https://www.npmjs.com/package/react)
+- [react-dom](https://www.npmjs.com/package/react-dom)
+- [react-native](https://www.npmjs.com/package/react-native)
+- [react-native-gesture-handler](https://www.npmjs.com/package/react-native-gesture-handler)
+- [react-native-reanimated](https://www.npmjs.com/package/react-native-reanimated)
+- [react-native-safe-area-context](https://www.npmjs.com/package/react-native-safe-area-context)
+- [react-native-screens](https://www.npmjs.com/package/react-native-screens)
+- [react-native-web](https://www.npmjs.com/package/react-native-web)
+- [react-native-worklets](https://www.npmjs.com/package/react-native-worklets)
+- [@types/react](https://www.npmjs.com/package/@types/react)
+- [typescript](https://www.npmjs.com/package/typescript)
+- [eslint](https://www.npmjs.com/package/eslint)
+- [eslint-config-expo](https://www.npmjs.com/package/eslint-config-expo)
 
 ### Other Credits
 
 - [Devicion](https://devicon.dev/)
 - [Skillicons](https://skillicons.dev/)
+- [PokéAPI](https://pokeapi.co)
 
 ## Project Structure
 
 ```bash
-├──app/                               # Controller files
-   ├──(tabs)/                         # App pages
-      ├──_layout.tsx
-      ├──explore.tsx
-      └──index.tsx
-   ├──_layout.tsx
-   └──modal.tsx
+├──.vscode
+   ├──extensions.json
+   └──settings.json
 ├──assets/                            # Compiled queries.js
-   └──images/                         # Image files
-      ├──android-icon-background.png
-      ├──android-icon-foreground.png
-      ├──android-icon-monochrome.png
+   ├──icons/
+      ├──adaptive-icon.png
       ├──favicon.png
       ├──icon.png
-      ├──partial-react-logo.png
-      ├──react-logo.png
-      ├──react-logo@2x.png
-      ├──react-logo@3x.png
-      └──splash-icon.png
-├──components/                        # Generated Prisma files
-   ├──ui/                             # UI components
-      ├──collapsible.tsx
-      ├──icon-symbol.ios.tsx
-      └──icon-symbol.tsx
-   ├──external-link.tsx
-   ├──haptic-tab.tsx
-   ├──hello-wave.tsx
-   ├──parallax-scroll-view.tsx
-   ├──themed-text.tsx
-   └──themed-view.tsx
-├──constants/                         # Prisma models and migrations
-   └──theme.ts
-├──hooks/                             # Locally hosted images and icons
-   ├──use-color-scheme.ts
-   ├──use-color-scheme.web.ts
-   └──use-theme-color.ts
-├──scripts/                           # Router files
-   └──reset-project.js
+      ├──ios-dark.png
+      ├──ios-light.png
+      ├──ios-tinted.png
+      ├──splash-icon-dark.png
+      └──splash-icon-light.png
+   └──images/
+      ├──screenshot-android-pikachu-large-popup.jpg
+      ├──screenshot-android-pikachu-small-popup.jpg
+      ├──screenshot-android.jpg
+      ├──screenshot-web-charmander.png
+      └──screenshot-web.png
+├──src/                               # Generated Prisma files
+   ├──app/                            # Controller files
+      ├──_layout.tsx                  # App pages
+      ├──details.tsx
+      └──index.tsx
+   ├──components/                     # UI components
+      └──pokemonCard.tsx
+   └──utils/                          # Utility files
+      ├──generateCardSize.ts
+      ├──styles.ts
+      └──types.ts
+├──.gitignore
 ├──app.json
+├──eas.json
 ├──eslint.config.js
 ├──LICENSE
 ├──package-lock.json
