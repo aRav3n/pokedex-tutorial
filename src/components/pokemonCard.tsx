@@ -8,6 +8,7 @@ import {
   pokemonLimitedInfoType,
 } from "../utils/types";
 import { generateCustomStyle, styles } from "../utils/styles";
+import { capitalizeWords } from "../utils/utilityFunctions";
 
 export default function PokemonCard({
   pokemon,
@@ -31,7 +32,17 @@ export default function PokemonCard({
       const types = data.types;
 
       const pokemonWithDetails = { ...pokemonToFetch, image, types };
+      const newName = capitalizeWords(pokemonWithDetails.name);
+      pokemonWithDetails.name = newName;
 
+      for (let i = 0; i < pokemonWithDetails.types.length; i++) {
+        const newTypeName = capitalizeWords(
+          pokemonWithDetails.types[i].type.name,
+        );
+        pokemonWithDetails.types[i].type.name = newTypeName;
+      }
+
+      console.log(pokemonWithDetails);
       setDetailedPokemonInfo(pokemonWithDetails);
     } catch (e) {
       console.error(e);
@@ -46,7 +57,7 @@ export default function PokemonCard({
     const customStyle = generateCustomStyle(
       detailedPokemonInfo,
       cardHeight,
-      cardWidth
+      cardWidth,
     );
 
     return (
