@@ -9,7 +9,7 @@ import PokemonCard from "../components/pokemonCard";
 
 import { pokemonLimitedInfoType } from "../utils/types";
 import { styles } from "../utils/styles";
-import { generateMainCardSize } from "../utils/generateCardSize";
+import { generateMainCardSize } from "../utils/utilityFunctions";
 
 const qtyOfPokemonToFetch = 151;
 
@@ -17,7 +17,7 @@ export default function Index() {
   const apiURL =
     "https://pokeapi.co/api/v2/pokemon/?limit=" + qtyOfPokemonToFetch;
   const [pokemonArray, setPokemonArray] = useState<pokemonLimitedInfoType[]>(
-    []
+    [],
   );
   const [cardHeight, setCardHeight] = useState<number>(0);
   const [cardWidth, setCardWidth] = useState<number>(0);
@@ -30,12 +30,13 @@ export default function Index() {
     const indexWidth = width;
     const { generatedCardHeight, generatedCardWidth } = generateMainCardSize(
       indexHeight,
-      indexWidth
+      indexWidth,
     );
     setCardHeight(generatedCardHeight);
     setCardWidth(generatedCardWidth);
   }, [height, width, headerHeight]);
 
+  // fetch the initial Pokémon array
   async function fetchPokemonArray() {
     try {
       const response = await fetch(apiURL);
@@ -47,8 +48,6 @@ export default function Index() {
       console.error(e);
     }
   }
-
-  // call fetchPokemonArray()
   useEffect(() => {
     fetchPokemonArray();
   }, []);

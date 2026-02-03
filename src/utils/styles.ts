@@ -13,12 +13,24 @@ export const styles = StyleSheet.create({
   closeText: {
     flexDirection: "row",
   },
-  headerTitle: {
-    alignSelf: "center",
+  headerGroup: {
+    backgroundColor: "#399494",
+    borderBottomWidth: 0,
+    display: "flex",
+    flexDirection: "row",
+  },
+  headerTitleGroup: {
+    fontSize: 32,
+    justifyContent: "center",
+  },
+  headerTitleIndividual: {
+    color: "#ffffff",
+    textAlign: "center",
   },
   mainFlexContainerContentStyle: {
     alignContent: "center",
     alignItems: "center",
+    backgroundColor: "#62d5b488",
     gap: 16,
     padding: 16,
   },
@@ -50,7 +62,7 @@ export const styles = StyleSheet.create({
 export function generateCustomStyle(
   pokemonInfo: pokemonDetailedInfoType | pokemonVeryDetailedInfoType,
   cardHeight: number | null,
-  cardWidth: number | null
+  cardWidth: number | null,
 ) {
   // credit: perplexity.ai
   const colorsByType = {

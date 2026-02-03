@@ -171,6 +171,7 @@ You can view the Pokédex entry for each Pokémon by clicking on them.
 - [Devicion](https://devicon.dev/)
 - [Skillicons](https://skillicons.dev/)
 - [PokéAPI](https://pokeapi.co)
+- [Pokémon Palette](https://www.pokemonpalette.com/)
 
 ## Project Structure
 

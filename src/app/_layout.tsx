@@ -1,13 +1,23 @@
 import { SplashScreen, Stack } from "expo-router";
 
+import { styles } from "../utils/styles";
+import { useHeaderHeight } from "@react-navigation/elements";
+
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
+
   return (
     <Stack>
       <Stack.Screen
         name="index"
-        options={{ headerTitleAlign: "center", title: "Pokédex" }}
+        options={{
+          headerStyle: styles.headerGroup,
+          headerTitleAlign: styles.headerTitleIndividual.textAlign,
+          headerTitleStyle: styles.headerTitleGroup,
+          headerTintColor: styles.headerTitleIndividual.color,
+          title: "Pokédex",
+        }}
       />
       <Stack.Screen
         name="details"
