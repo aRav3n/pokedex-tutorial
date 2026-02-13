@@ -7,7 +7,7 @@ import {
 } from "./types";
 import { asPokemonType } from "./utilityFunctions";
 
-const pokedexEntryTextSize = 24;
+const pokedexEntryTextSize = 20;
 
 export const styles = StyleSheet.create({
   boldText: {

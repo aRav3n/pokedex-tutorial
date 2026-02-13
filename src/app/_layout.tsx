@@ -23,6 +23,8 @@ export default function RootLayout() {
         options={{
           title: "Details",
           headerBackButtonDisplayMode: "minimal",
+          headerTitleAlign: styles.headerTitleIndividual.textAlign,
+          headerTitleStyle: styles.headerTitleGroup,
           presentation: "formSheet",
           sheetAllowedDetents: [0.3, 0.7],
           sheetGrabberVisible: true,
